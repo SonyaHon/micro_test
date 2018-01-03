@@ -4,16 +4,54 @@
     height: 100%;
     padding: 10px 20px;
     padding-left: 30px;
+    flex-direction: column;
 }
 
-.canvas-wrapper {
-
+.canvas-wapper {
+    width: 100%;
+    height: calc(50% - 20px - 20px);
+    display: flex;
+    flex-direction: column;
+    box-shadow: inset -1px -1px 2px 0px rgba(50, 50, 50, 0.5);
+    background-color: rgb(67.5%, 68.7%, 68.4%);
 }
 
 .canvas-header {
-
+    position: relative;
+    height: 30px;
+    text-transform: uppercase;
+    color: white; 
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .canvas-cvs {
-    
+    z-index: 1;
+    width: 100%;
+    height: 100%;    
+}
+
+.controls {
+    height: 50px;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px; 
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+
+#play_button {
+    width: 30px;
+    height: 30px;
+    fill: darkslategrey;
+    transition: fill 0.2s linear;
+}
+
+#play_button:hover {
+    cursor: pointer;
+    fill: rgb(54, 90, 90);
 }
