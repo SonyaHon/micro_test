@@ -1,0 +1,19 @@
+
+.error {
+    width: calc(45% - 70px);
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.error-title {
+    margin-right: 5px;
+}
+
+.err-wrapper {
+    width: calc(50% - 5px);
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}

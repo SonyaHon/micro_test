@@ -65,6 +65,9 @@ var cfg = [
     {name: '100 cm', ctx: './100cm/'}
 ]
 
+var AudioContext = window.AudioContext || window.webkitAudioContext;
+window.audioContext = new AudioContext();
+
 var player = new Player();
 var menu = new UI.Menu(cfg, player);
 

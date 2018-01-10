@@ -1,0 +1,27 @@
+.timeline {
+    width: calc(50% - 70px);
+    height: 30px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+.background {
+    background-color: grey;
+    box-shadow: inset 0px 0px 1px 0px black;
+    height: 5px;
+    width: calc(100% - 55px);
+    position: absolute;
+}
+
+.time {
+    position: absolute;
+    background-color: white;
+    height: 5px;
+    width: 0;
+}
+
+.digits {
+    position: absolute;
+    right: 0;
+}

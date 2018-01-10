@@ -30,7 +30,8 @@
 .canvas-cvs {
     z-index: 1;
     width: 100%;
-    height: 100%;    
+    height: 100%;
+    background-color: black;
 }
 
 .controls {
@@ -39,19 +40,33 @@
     margin-top: 5px;
     margin-bottom: 5px; 
     display: flex;
+    justify-content: center;
     align-items: center;
     padding-left: 10px;
 }
 
 
-#play_button {
+.controls_button {
     width: 30px;
     height: 30px;
     fill: darkslategrey;
     transition: fill 0.2s linear;
+    margin-right: 10px;
 }
 
-#play_button:hover {
+.controls_button:hover {
     cursor: pointer;
-    fill: rgb(54, 90, 90);
+    fill: rgb(90, 90, 90);
+}
+
+.disabled {
+    color: grey;
+}
+
+.disabled .controls_button {
+    fill: grey;
+}
+
+.disabled .controls_button:hover {
+    cursor: default;
 }

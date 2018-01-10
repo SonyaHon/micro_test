@@ -10,6 +10,7 @@ function ListOption(opt, proxy, ctx) {
     this.el.innerHTML = '&#149;&emsp;' + opt.src.split('/')[opt.src.split('/').length - 1].split('.')[0];
     this.audioNode = opt;
     this.micro_name = opt.src.split('/')[opt.src.split('/').length - 1].split('.')[0];
+    this.nnode = window.audioContext.createMediaElementSource(this.audioNode);
     this.el.addEventListener('click', function() {
         this.ctx.changeChoosed(this);
         this.proxy.changeSample(this);
